@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tilottama Campus, Butwal</title>
+    <style>
+        /* ===== Reset & Fonts ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* ===== Header ===== */
+        header {
+            background: url('https://i.ytimg.com/vi/XcOi_Hx3cZM/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AG6CIAC0AWKAgwIABABGGUgVChGMA8=&rs=AOn4CLDugjlj5j9cysDEMB7iKx48avTxMQ') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        header::after {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(0,0,128,0.6); /* dark blue overlay */
+        }
+
+        header h1 {
+            position: relative;
+            font-size: 3em;
+            z-index: 1;
+        }
+
+        header p {
+            position: relative;
+            font-size: 1.2em;
+            z-index: 1;
+            margin-top: 10px;
+        }
+
+        /* ===== Navigation ===== */
+        nav {
+            background-color: #001f4d;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        /* ===== Sections ===== */
+        section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #001f4d;
+        }
+
+        section p {
+            margin-bottom: 20px;
+        }
+
+        /* ===== Cards ===== */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            flex: 1 1 250px;
+            max-width: 300px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            background-color: #001f4d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #ffcc00;
+        }
+
+        @media(max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            .card-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div>
+            <h1>Tilottama Campus, Butwal</h1>
+            <p>Quality Education for a Brighter Future</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Tilottama Campus</h2>
+        <p>Tilottama Campus is a private higher education institution located in Yogikuti, Shankarnagar-2, Butwal. Established in 1996, the campus aims to provide quality education and create a supportive learning environment for students in Rupandehi and nearby areas.</p>
+        <p>It is affiliated with renowned universities and boards to offer programs that equip students with both theoretical knowledge and practical skills.</p>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs">
+        <h2>Programs Offered</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>10+2 Science & Management</h3>
+                <p>Higher Secondary education under NEB, providing foundational knowledge for university education.</p>
+            </div>
+            <div class="card">
+                <h3>Bachelor of Business Administration (BBA)</h3>
+                <p>Under Pokhara University affiliation, focuses on management and business skills development.</p>
+            </div>
+            <div class="card">
+                <h3>Future MBA Program</h3>
+                <p>The campus plans to introduce a Master of Business Administration program for advanced studies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities">
+        <h2>Campus Facilities</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Library</h3>
+                <p>Well-stocked with textbooks, reference books, and study resources for students.</p>
+            </div>
+            <div class="card">
+                <h3>Science & Computer Labs</h3>
+                <p>Modern laboratories for practical experiments and computer learning.</p>
+            </div>
+            <div class="card">
+                <h3>Spacious Campus</h3>
+                <p>Comfortable classrooms, gardens, and open spaces for extracurricular activities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@tilottamacampus.edu.np</p>
+        <p>Phone: +977-71-XXXXX</p>
+        <p>Address: Yogikuti, Shankarnagar-2, Butwal, Rupandehi, Nepal</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2026 Tilottama Campus, Butwal. All Rights Reserved. | <a href="#">Privacy Policy</a>
+    </footer>
+</body>
+</html>
+Mm
